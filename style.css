@@ -186,7 +186,7 @@ body {
   background-image: linear-gradient(to right, #0f0d0d 50%, #edbfff 50%);
   background-size: 200% 100%;
   background-position: right;
-  transition: background-position 1 s ease, color 1s ease;
+  transition: background-position 1s ease, color 1s ease;
 }
 
 .page2-right button:hover {
