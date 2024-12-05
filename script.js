@@ -160,6 +160,7 @@ tl3.to(".main", {
 boxes.forEach(function (elem) {
   elem.addEventListener("mouseenter", function () {
     var att = elem.getAttribute("data-image");
+    crsr.style.display = "block";
     crsr.style.width = "30vw";
     crsr.style.height = "25vw";
     crsr.style.borderRadius = "15px";
@@ -168,6 +169,11 @@ boxes.forEach(function (elem) {
     crsr.style.left = "-10%";
     crsr.style.top = "-20%";
   });
+  if (window.innerWidth < 768) {
+    elem.addEventListener("mouseleave", function () {
+      crsr.style.display = "none";
+    });
+  }
   elem.addEventListener("mouseleave", function () {
     crsr.style.width = "20px";
     crsr.style.height = "20px";
